@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NETRA | Robot Mission Control</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="tophead">
+        <!-- Logo -->
+        <div class="logo">
+            <div class="brand-logo">N</div>
+            <div>
+                <h1>NETRA</h1>
+                <p>ROBOT MISSION CONTROL</p>
+            </div>
+        </div>
+
+        <!-- Navigation menu -->
+        <nav aria-label="Main navigation">
+            <a href="#">Dashboard</a>
+            <a href="#">Fleet</a>
+            <a href="#">Telemetry</a>
+            <a href="#">Alerts</a>
+        </nav>
+
+        <!-- System status and clock -->
+        <div class="system-dot">
+            <span class="dot" aria-hidden="true"></span>
+            <span>System Online</span>
+            <strong id="clock">--:--:--</strong>
+        </div>
+
+        <button id="dispatch-open" type="button">+ Dispatch Mission</button>
+    </header>
+
+    <main class="page">
+        <section class="kpi-grid" aria-label="Mission control overview">
+            <article class="kpi-card">
+                <span>ROVERS ONLINE</span>
+                <h2 id="rover-count">--</h2>
+                <p>ACTIVE ROVER UNITS</p>
+            </article>
+
+            <article class="kpi-card">
+                <span>MISSION ACTIVE</span>
+                <h2 id="battery-level">73%</h2>
+                <p>FLEET BATTERY LEVEL</p>
+            </article>
+
+            <article class="kpi-card">
+                <span>OPEN ALERTS</span>
+                <h2 id="alert-count">2</h2>
+                <p>REQUIRED ATTENTION</p>
+            </article>
+
+            <article class="kpi-card">
+                <span>DISTANCE TODAY</span>
+                <h2 id="distance-cover">--</h2>
+                <p>TOTAL SIMULATED DISTANCE</p>
+            </article>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
